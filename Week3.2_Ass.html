@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>
+         Array 
+     </title>
+</head>
+<style>
+    h1{
+        font-size: xx-large;
+        font-family: cursive;
+        color: dimgrey;
+    }
+    button{
+        font-size: xx-large;
+        color: gray;
+        padding: 2px;
+    }
+</style>
+<body>
+    <h1>Click on the required options for the sort operations</h1>
+    <button onclick="ascend()">Ascending order</button>
+    <button onclick="descend()">Descending order</button>
+    <button onclick="alpha()">Alphabetical Order</button>
+    <p id="demo"></p>
+    <script>
+        let numbers = [4,3,5,1,10,2,22,12];
+        document.getElementById("demo").innerHTML = numbers;
+        function alpha(){
+            let alphabet=numbers.sort();
+            document.getElementById("demo").innerHTML = alphabet;
+        }
+        function ascend(){
+            
+            let lowestToHighest = numbers.sort((a, b) => a - b);
+            document.getElementById("demo").innerHTML = lowestToHighest;
+        }
+        function descend(){
+            
+            let highestToLowest = numbers.sort((a, b) => b-a);
+            document.getElementById("demo").innerHTML = highestToLowest;
+        }
+    </script>
+</body>
+</html>
