@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <title>
+      ISTE Web Development
+    </title>
+ <header class= "header">
+    Welcome to ISTE Web Development 
+    <br>
+    <ul class = "nav" >
+        <li><a href = "#"> Home</a></li>
+        <li ><a href = "backgroungimg.jpg">Logo</a></li>
+        <li><a href = "contactus.html">Contact Us</a></li>
+        <li><a href = "mailto: iste.support@gmail.com">Helpdesk</a></li>
+    </ul>
+ </header>
+<link rel = "stylesheet" href = "myStyle.css">
+<body class = "body">
+ <h1> Sign Up Now</h1>
+ <form class = "form">
+     
+         <label class= "label" for = "Mr">
+             Mr
+         </label>
+         <input class = "input" type="radio" name = "title" value = "Mr" required />
+         <label  class= "label" for = "Mrs">
+            Mrs
+        </label>
+        <input class = "input" type="radio" name = "title" value = "Mrs" required/>
+        <label class= "label" for = "Miss">
+            Miss
+        </label>
+        <input class = "input" type="radio" name = "title" value = "Miss" required/>
+        <br>
+        <br>
+        <label class= "label">
+            First Name  
+            <input class = "input" type = "text" name = "name"  placeholder = "First Name"  required />
+        </label>
+        <br>
+        <br>
+        <label class= "label">
+            Last Name  
+            <input class = "input" type = "text" name = "name" placeholder = "Last Name"  required />
+        </label>
+        <br>
+        <br>
+        <label class= "label">
+            Email 
+            <input class = "input" type = "email" name = "email" placeholder = "Email" required/>
+        </label>
+        <br>
+        <br>
+        <label class= "label">
+            Phone Number
+            <input class = "input" type = "tel" name = "tel"  placeholder = "Phone"  required/>
+        </label>
+        <br>
+        <br>
+        <label class= "label">
+            Password
+            <input class = "input" type = "password" name = "password"  placeholder = "Enter Password"  required/>
+        </label>
+        <br>
+        <br>
+        <label class= "label">
+            Confirm your Password
+            <input  class = "input" type = "password" name = "confirm_password"  placeholder = "Re- Enter Password"   required />
+        </label>
+        <br>
+        <p>
+        <label class= "label">
+            Country
+         <select required>
+             <option value = "select">Select Your Country</option>
+             <option value = "India" >India</option>
+             <option value = "UAE" > UAE</option>
+             <option value = "Australia" > Australia</option>
+             <option value = "USA" > USA</option>
+             <option value = "Other" > Other</option>
+         </select>
+        </label>
+        </p>
+        <label>
+            <input type = "checkbox" name = "agree" checked = "checked" />
+            I agree to the <a href = "termsandconditions.html">terms and condtionss</a>
+        </label>
+        <br>
+        <br>
+        <input id = "form-submit-button" type = "submit" value = "Sign Up" color = "blue"/>
+        <input id = "form-reset-button" type = "reset" value = "Reset"/>
+ </form>
+</body>
+<footer>
+    <pre>For more details
+  visit us @ <a href = "contactus.html" >Contact Us</a> 
+</footer>
+ 
+</html>
